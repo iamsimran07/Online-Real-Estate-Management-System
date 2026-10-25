@@ -1,0 +1,92 @@
+# ==============================================================================
+# Online Real Estate Management System - Git Ignore Configuration
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. Environment Variables & Secrets (CRITICAL: NEVER commit real credentials)
+# ------------------------------------------------------------------------------
+.env
+.env.*
+*.env
+backend/.env
+backend/.env.*
+frontend/.env
+frontend/.env.*
+# Keep template examples tracked in version control
+!.env.example
+!backend/.env.example
+!frontend/.env.example
+
+# ------------------------------------------------------------------------------
+# 2. Dependencies & Package Folders
+# ------------------------------------------------------------------------------
+node_modules
+node_modules/
+**/node_modules/
+frontend/node_modules/
+
+# ------------------------------------------------------------------------------
+# 3. Build & Distribution Outputs
+# ------------------------------------------------------------------------------
+target/
+**/target/
+backend/target/
+dist/
+**/dist/
+frontend/dist/
+dist-ssr/
+*.local
+
+# Compiled Java class files & archives
+*.class
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+*.log
+*.ctxt
+.mtj.tmp/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Crash logs
+hs_err_pid*
+replay_pid*
+
+# ------------------------------------------------------------------------------
+# 4. Local Database Files & Storage
+# ------------------------------------------------------------------------------
+data/
+backend/data/
+**/data/
+*.mv.db
+*.trace.db
+*.db
+*.h2.db
+*.sqlite
+*.sqlite3
+
+# ------------------------------------------------------------------------------
+# 5. IDE & Operating System Artifacts
+# ------------------------------------------------------------------------------
+.idea/
+*.iml
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db
+

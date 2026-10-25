@@ -1,0 +1,16 @@
+# Backend specific ignores
+target/
+**/target/
+data/
+**/data/
+*.db
+*.mv.db
+*.trace.db
+*.h2.db
+.env
+.env.*
+*.env
+!.env.example
+.idea/
+*.iml
+.vscode/
